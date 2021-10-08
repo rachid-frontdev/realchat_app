@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>real chat time with node</title>
+    <!-- <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/> -->
+    <script src="https://use.fontawesome.com/7a832ca284.js"></script>
+
+    <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .main{
+      width:1000px;
+      min-height:600px;
+      margin:10px auto;
+      position: relative;
+    }
+    header {
+      background: blueviolet;
+      position: relative;
+      display: flex;
+      align-items: center;
+        }
+    h1 {
+      color:#ffff;
+      margin-left: 5px;
+
+    }
+    #leave {
+      text-transform: capitalize;
+      padding: 5px 10px;
+      color: #8a33e2ed;
+      border: none;
+    border-radius: 3px;
+    position: absolute;
+    right:0;
+    margin-right: 5px;
+
+    }
+.laqab {
+  background: red;
+      position: absolute;
+      padding: 10px 20px;
+      width: 230px;
+      margin-left: 50%;
+      transform: translateX(-50%);
+      justify-content: center;
+      display: flex;
+      font-size: 1.03em;
+      color: white;
+      border-radius: 8px;
+      text-transform: capitalize;
+    }
+    aside {
+      color:white;
+      background:#8a33e2e0;
+      width:30%;
+      height:500px;
+      overflow: auto;
+    }
+     aside > h3{
+      padding: 30px;
+
+    }
+    li {
+      text-transform: capitalize;
+      padding: 10px;
+      list-style: none;
+    }
+    #messageContainer {
+      background: #fdfdfd;
+      width:700px;
+      height: 500px;
+      position: absolute;
+      left:300px;
+      top:37px;
+      overflow: auto;
+    }
+    .one-container {
+      background:#efefef;
+      padding:7px;
+      margin:20px;
+      border-radius:5px;
+    }
+    .name-user {
+      color:#8a33e2e0;
+    }
+    .meta {
+      color:grey;
+      font-size: 10px;
+
+    }
+    .send-container{
+      background: #8a33e2;
+      height: 63px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+      position: relative;
+    }
+#message-input {
+  width: 74%;
+padding: 8px 2px;
+position: relative;
+}
+#send-btn {
+  position: absolute;
+  left:87%;
+  padding: 9px 2px;
+  width: 5%;
+  border: none;
+  color: #8a33e2ed;
+
+}
+#send-btn, #leave {
+  cursor: pointer;
+}
+.warning {
+  background:#ff00004f;
+}
+    </style>
+  </head>
+  <body>
+    <div class="main">
+          <header>
+      <h1>realchat </h1>
+      <button type="button"id="leave" name="leave">leave room</button>
+    </header>
+   <aside>
+<h3><span><i class="fa fa-user-circle-o" aria-hidden="true"></i>
+</span>Users</h3>
+      <ul class="list_Users"></ul>
+    </aside>
+    <section id="messageContainer"></section>
+
+    <form class="send-container" >
+      <label for="message-input"></label>
+      <input type="text" id="message-input" name="message" placeholder="enter your message">
+      <button type="button" id="send-btn">Send</button>
+    </form>
+</div>
+    <!-- <div id= 'replace'> </div>
+    <div id="feedback"></div>
+ -->
+    <script  src="/socket.io/socket.io.js"></script>
+    <script defer src="script.js"></script>
+  </body>
+</html>

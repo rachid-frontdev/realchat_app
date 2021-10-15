@@ -14,7 +14,10 @@ const { Server } = require("socket.io");
 const io = new Server(server);
 
 app.use(express.static('public'));
-
+// app.set('view engine', 'ejs');
+app.get('/', (req,res) => {
+res.render('base', {title:'login system'})
+})
 server.listen(3000, () => {
   console.log('you are in port 3000');
 });

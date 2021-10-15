@@ -1,0 +1,163 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  height:200vh;
+    font-family: 'Open Sans', sans-serif;
+    background: hsl(257, 40%, 49%) url("./images/bg-desktop.svg") no-repeat;
+    padding: 50px 60px;
+}
+
+header img {
+  width: 150px;
+
+}
+/* .right{
+  position: absolute;
+  left: 49em;
+  bottom: 310px;
+} */
+main {
+  display: flex;
+  padding-top: 85px;
+  justify-content: space-between;
+}
+.left {
+    padding-right: 2.5em;
+
+}
+
+.right {
+    color: #fff;
+}
+
+h1,h3 {
+    font-size: 2.5em;
+    font-family: 'Poppins';
+    padding-bottom: 20px;
+    text-transform: capitalize;
+
+}
+p,h5 {
+      line-height: 1.7;
+opacity: .8;
+}
+button {
+    padding: 15px 60px;
+    margin-top: 30px;
+    border-radius: 5rem;
+    border: 0;
+    cursor: pointer;
+    color: hsl(257, 40%, 49%);
+    font-size: 1em;
+    font-weight: 600;
+}
+
+button:hover, button:hover > a {
+    color: #fff;
+    background: hsl(300, 69%, 71%);
+}
+button a {
+  text-decoration: none;
+  color:hsl(257, 40%, 49%)
+}
+a > img {
+  margin-top: 20px;
+  padding: 10px;
+  width: 60px;
+    position: relative;
+    margin-left: 50%;
+    left: -30px;
+}
+footer {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+
+.fab {
+    border: 2px solid #fff;
+    padding: 10px 10px;
+    border-radius: 50%;
+    margin-left: 20px;
+    color: #fff;
+}
+
+.fa-facebook-f {
+    padding: 10px 13px;
+}
+
+.fab:hover {
+    color: hsl(300, 69%, 71%);
+    border-color: hsl(300, 69%, 71%);
+    cursor: pointer;
+}
+@media screen and (max-width: 1000px) {
+
+    main {
+        flex-direction: column;
+    }
+
+    .left img {
+        width: 100%;
+    }
+
+    .right {
+        padding-top: 40px;
+        text-align: center;
+    }
+
+    h1  {
+        font-size: 1.8em;
+    }
+
+    button {
+        padding: 15px 90px;
+    }
+
+    footer {
+        text-align: center;
+        padding-top: 80px;
+    }
+
+}
+a + section {
+ margin-top: 100px;
+  color: #fffff5;
+
+
+}
+form#login {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  width:600px;
+
+}
+input{
+  width: 350px;
+  padding: 5px 10px;
+
+}
+#pass{
+  margin-top: 14px
+}
+#pass + button {
+  width: 175px;
+}
+a > img {
+
+animation: myAnimation 1.2s linear infinite;
+}
+@keyframes myAnimation {
+  0%{
+    transform: translateY(-10px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
+}

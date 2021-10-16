@@ -23,7 +23,6 @@ npm install socket.io
 
 
 * ***social media:***
-
- * [Twitter](https://www.twitter.com/rachidlion7)
- * [Github](https://github.com/rachid-frontdev)
- * [Linkedin](https://www.linkedin.com/in/RachidBenharzallah)
+   * [Twitter](https://www.twitter.com/rachidlion7)
+   * [Github](https://github.com/rachid-frontdev)
+   * [Linkedin](https://www.linkedin.com/in/RachidBenharzallah)

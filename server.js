@@ -7,7 +7,9 @@
 const express = require('express');
 const app = express();
 const moment = require('moment');
-
+// authonticate
+const passport = require('passport'),
+      LocalStrategy = require('passport-local').Strategy;
 const http = require('http');
 const server = http.createServer(app);
 const { Server } = require("socket.io");

@@ -8,7 +8,7 @@
 body {
   height:200vh;
     font-family: 'Open Sans', sans-serif;
-    background: hsl(257, 40%, 49%) url("./images/bg-desktop.svg") no-repeat;
+    background: hsl(257, 40%, 49%) url("/images/bg-desktop.svg") no-repeat;
     padding: 50px 60px;
 }
 
@@ -62,7 +62,6 @@ button:hover, button:hover > a {
     background: hsl(300, 69%, 71%);
 }
 button a {
-  text-decoration: none;
   color:hsl(257, 40%, 49%)
 }
 a > img {
@@ -143,10 +142,10 @@ input{
   padding: 5px 10px;
 
 }
-#pass{
+.pass{
   margin-top: 14px
 }
-#pass + button {
+#submit {
   width: 175px;
 }
 a > img {
@@ -160,4 +159,27 @@ animation: myAnimation 1.2s linear infinite;
   100%{
     transform: translateY(0px);
   }
+}
+/* header */
+header{
+  position: relative;
+}
+.nav {
+  position:absolute;
+  top:1.5px;
+  right:10px;
+  display: flex;
+  flex-direction: row;
+}
+a {
+  text-decoration: none;
+}
+li a {
+  color:#fff
+
+}
+li {
+  text-transform: capitalize;
+  padding: 10px;
+  list-style: none;
 }

@@ -11,7 +11,7 @@ module.exports = (passport) => {
       (username, password, done) => {
       User.findOne({ username: username }, function (err, user) {
         //DB err can't find
-        if (err) throw err;
+        if (err)  done(err);
         // When the username itself is not in the DB
         if (!user) {
           return done(null, false,{message:'Incorrect username.'});

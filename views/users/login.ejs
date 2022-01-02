@@ -1,0 +1,14 @@
+<%- include('../layout') %>
+<h1 style="color: black;">Sign In <%= user %></h1>
+<form action="/login" method="POST">
+  <div class="form-group">
+    <label for="username">Username</label>
+    <input class="form-control" name="username" id="username" placeholder="Enter Username" />
+  </div>
+  <div class="form-group">
+    <label for="password">Password</label>
+    <input class="form-control" name="password" type="password" id="password" />
+  </div>
+  <button class="btn btn-primary" type="submit">Submit</button>
+</form>
+<h5>if you don't have account? <a href="/signup">signup</a></h5>

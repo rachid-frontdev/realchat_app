@@ -10,9 +10,16 @@
   "author": "rachid-Frontdev",
   "license": "ISC",
   "dependencies": {
-    "bcryptjs": "^2.4.3",
+    "bcrypt": "^5.0.1",
+    "connect-ensure-login": "^0.1.1",
+    "connect-flash": "^0.1.1",
+    "connect-session": "0.0.1",
+    "ejs": "^3.1.6",
     "express": "^4.17.1",
+    "express-session": "^1.17.2",
     "moment": "^2.29.1",
+    "mongoose": "^6.1.2",
+    "mongoose-url-slugs": "^1.0.2",
     "passport": "^0.5.0",
     "passport-local": "^1.0.0",
     "socket.io": "^4.2.0"

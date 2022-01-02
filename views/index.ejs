@@ -1,0 +1,36 @@
+<%- include('layout') %>
+
+<div class="main">
+      <header>
+  <h1>realchat </h1>
+  <button type="button"id="leave" name="leave">
+<a href="/users/logout">leave room</a>
+</button>
+</header>
+<a href="/users/login">login</a>
+<!-- try -->
+<input type="text" name="username" placeholder="username" id="username">
+<button onclick="send()">Send</button>
+
+<aside>
+<h3><span><i class="fa fa-user-circle-o" aria-hidden="true"></i>
+</span>Users</h3>
+  <ul class="list_Users"></ul>
+</aside>
+<section id="messageContainer"></section>
+
+<form class="send-container" >
+  <label for="message-input"></label>
+  <input type="text" id="message-input" name="message" placeholder="enter your message">
+  <button type="button" id="send-btn">Send</button>
+</form>
+<ul>
+  <%for(let user in users) { %>
+    <li><%= `User:  ${users[user].username}` %></li>
+<% } %>
+</ul>
+</div>
+<!-- <div id= 'replace'> </div>
+<div id="feedback"></div>
+-->
+<%- include('footer') %>

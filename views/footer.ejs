@@ -1,0 +1,23 @@
+    <script  src="/socket.io/socket.io.js"></script>
+    <script defer src="/script.js"></script>
+    <script type="text/javascript">
+    const send = () => {
+      let username = document.getElementById('username').value;
+
+      ajax.post({
+        url: '/wow',
+        data: {
+          username: username
+        }
+      })
+        .then(response => {
+          console.log(response.body)
+        })
+        .catch(console.error);
+    }
+
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@codexteam/ajax"></script>
+  </body>
+</html>
